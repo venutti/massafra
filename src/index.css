@@ -1,13 +1,191 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Nova Round', cursive;
+font-family: 'Zilla Slab', serif;
+*/
+
+:root {
+  --primary: #61a375;
+  --primary-dark: #0c3117;
+  --black: #1b1916;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/concrete-wall-2.png");
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/*
+PRINCIPAL LAYOUT
+*/
+
+.principal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.carrousel {
+  flex: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.55);
+}
+
+.header {
+  max-width: 300px;
+  margin: 20px auto;
+  padding-right: 15px;
+}
+.header .logo-title {
+  display: flex;
+  align-items: center;
+  font-family: "Nova Round", cursive;
+  font-size: 50px;
+  letter-spacing: -5px;
+  margin-bottom: -15px;
+}
+.header .logo-subtitle {
+  text-align: end;
+}
+
+.styled-button {
+  background-color: var(--primary);
+  font-family: "Nova Round", cursive;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 30px;
+
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.styled-button:hover {
+  filter: brightness(0.65);
+}
+.styled-button::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+/*
+MENU LAYOUT
+*/
+
+.menu {
+  min-height: 100vh;
+}
+.menu .title {
+  text-align: end;
+  font-family: "Zilla Slab", serif;
+  font-size: 40px;
+  padding: 20px;
+}
+.menu .title hr {
+  height: 5px;
+  border-radius: 3px;
+  background-color: var(--black);
+  border: none;
+}
+.menu .category {
+  position: relative;
+  padding: 15px 45px;
+  margin-top: 50px;
+}
+.category-title {
+  font-family: "Zilla Slab", serif;
+  font-size: 28px;
+}
+.category-description {
+  color: var(--primary-dark);
+  line-height: 1;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.menu .category::after {
+  content: "";
+  position: absolute;
+  border: 1px solid red;
+  width: 85%;
+  height: 100%;
+  top: 10px;
+  left: 20px;
+}
+.menu .category::before {
+  content: "";
+  position: absolute;
+  border: 1px solid red;
+  width: 85%;
+  height: 100%;
+  top: 0px;
+  left: 30px;
+}
+
+.section-title {
+  font-family: "Nova Round", cursive;
+  color: var(--primary-dark);
+  font-size: 25px;
+  filter: drop-shadow(1px 1px 1px #ffffff);
+  margin-top: 20px;
+  margin-bottom: -5px;
+}
+
+/*
+ITEMS
+*/
+.section-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--primary-dark);
+}
+.item-info {
+  flex: 1;
+}
+.item-name {
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.item-description {
+  margin-top: -3px;
+  line-height: 1;
+  font-size: 15px;
+}
+.item-price {
+  font-weight: 700;
+  color: var(--primary-dark);
+  font-size: 20px;
 }

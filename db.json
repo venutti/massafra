@@ -1,0 +1,166 @@
+{
+  "products": [
+    {
+      "category": "BAR DE TAPAS",
+      "description": "",
+      "sections": [
+        {
+          "title": "TAPEO",
+          "items": [
+            {
+              "name": "Papas",
+              "description": "",
+              "price": 1100
+            },
+            {
+              "name": "Papas con salsas",
+              "description":"Cheddar, panceta y verdeo\nBravas",
+              "price": 1400
+            },
+            {
+              "name": "Tortilla española",
+              "description": "La clásica tortilla española rellena con chorizo y mozzarella",
+              "price": 1300
+            },
+            {
+              "name": "Brusquetas",
+              "description": "Serrana: lomo ahumado, morrones, rúcula y mozzarella\nCapresse: tomate, albahaca, ajo, oliva y cubos de mozzarella",
+              "price": 1200
+            },
+            {
+              "name": "Rabas",
+              "description": "Porción: 20 anillos",
+              "price": 2700
+            },
+            {
+              "name": "Tacos",
+              "description": "2 tacos de carne\n1 con guacamole, porotos negros y criolla\n1 con queso crema, arroz y cheddar",
+              "price": 1700
+            },
+            {
+              "name": "Quesadilla",
+              "description": "2 quesadillas\n1 con guacamole, porotos negros y vegetales\n1 con cheddar, arroz y vegetales",
+              "price": 1400
+            },
+            {
+              "name": "Tabla Massafra",
+              "description": "Pañuelitos de ajo arriero, pincho moruno, pollo tandoori, papas fritas",
+              "price": 2900
+            },
+            {
+              "name": "Fritura de mar",
+              "description": "Rabas, langostinos crispy, fishs y papas fritas",
+              "price": 3800
+            },
+            {
+              "name": "Tabla de fiambres serranos",
+              "description": "Jamón cocido y crudo, lomo ahumado con especias, longaniza calabresa, bondiola y variedad de quesos",
+              "price": 2800
+            },
+            {
+              "name": "Tabla de quesos y frutos",
+              "description": "Queso azul, gouda, pategras, sardo y tybo\nFrutos secos, olivas y conservas",
+              "price": 2600
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "CAFE",
+      "description": "Podés elegir el gramo de Cafe Cabrales:\nSuper - Prestige - Colombiano - Brasilero - Ristreto - Italiano",
+      "sections": [
+        {
+          "title": "Cafe",
+          "items": [
+            {
+              "name": "Espresso",
+              "description": "Pocillo de expresso negro",
+              "price": 450
+            },
+            {
+              "name": "Espresso doble",
+              "description": "Taza de expresso negro",
+              "price": 550
+            },
+            {
+              "name": "Lungo",
+              "description": "Jarrito de expresso negro",
+              "price": 500
+            },
+            {
+              "name": "Macchiato",
+              "description": "Espresso (2/3), leche caliente (1/3) y espuma de leche",
+              "price": 500
+            },
+            {
+              "name": "Lagrima",
+              "description": "Espresso (1/3) y leche caliente espumada",
+              "price": 500
+            },
+            {
+              "name": "Cafe con leche",
+              "description": "Espresso (50%) y leche caliente (50%)",
+              "price": 550
+            }
+          ]
+        },
+        {
+          "title": "Cafe especial",
+          "items": [
+            {
+              "name": "Flat white",
+              "description": "Espresso fuerte, leche caliente espumada",
+              "price": 500
+            },
+            {
+              "name": "Latte",
+              "description": "Espresso (1/3), leche caliente (2/3) y leche espumada",
+              "price": 500
+            },
+            {
+              "name": "Latte caramel",
+              "description": "Espresso (1/3), leche caliente (2/3) y caramelo",
+              "price": 500
+            },
+            {
+              "name": "Capuccino",
+              "description": "Espresso (1/3), leche caliente (1/3), espuma (1/3) y canela",
+              "price": 550
+            },
+            {
+              "name": "Moka",
+              "description": "Espresso, leche caliente espumada y chocolate",
+              "price": 550
+            },
+            {
+              "name": "Irish coffe",
+              "description": "Espresso, azúcar, whisky y crema",
+              "price": 650
+            }
+          ]
+        },
+        {
+          "title": "Cafe frio",
+          "items": [
+            {
+              "name": "Cafe vienes",
+              "description": "Café frío con copa de crema",
+              "price": 750
+            },
+            {
+              "name": "Frapuccino",
+              "description": "Café frío, helado de vainilla, crema de leche y chantilly",
+              "price": 750
+            },
+            {
+              "name": "Iced coffe classic",
+              "description": "Café frío, leche y crema helada",
+              "price": 750
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
