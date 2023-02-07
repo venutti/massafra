@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/massafra/static/css/main.001fc645.css",
-    "main.js": "/massafra/static/js/main.3f763bcc.js",
+    "main.css": "/massafra/static/css/main.1c15e5aa.css",
+    "main.js": "/massafra/static/js/main.5d1af854.js",
     "static/media/pescado.jpg": "/massafra/static/media/pescado.6f3a336c0c3db46f2c6a.jpg",
     "static/media/concrete-wall-2.png": "/massafra/static/media/concrete-wall-2.28844a728d06b7ed765b.png",
     "static/media/hoja.png": "/massafra/static/media/hoja.430d6a6f4110fcd9946a.png",
     "index.html": "/massafra/index.html",
-    "main.001fc645.css.map": "/massafra/static/css/main.001fc645.css.map",
-    "main.3f763bcc.js.map": "/massafra/static/js/main.3f763bcc.js.map"
+    "main.1c15e5aa.css.map": "/massafra/static/css/main.1c15e5aa.css.map",
+    "main.5d1af854.js.map": "/massafra/static/js/main.5d1af854.js.map"
   },
   "entrypoints": [
-    "static/css/main.001fc645.css",
-    "static/js/main.3f763bcc.js"
+    "static/css/main.1c15e5aa.css",
+    "static/js/main.5d1af854.js"
   ]
 }
