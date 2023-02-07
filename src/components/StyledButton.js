@@ -1,3 +1,10 @@
 export default function StyledButton({ children }) {
-  return <button className="styled-button">{children}</button>;
+  const scrollIntoMenu = () => {
+    document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+  };
+  return (
+    <button onClick={scrollIntoMenu} className="styled-button">
+      {children}
+    </button>
+  );
 }

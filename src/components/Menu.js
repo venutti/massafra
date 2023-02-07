@@ -1,23 +1,14 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Container from "./Container";
 import MenuCategory from "./MenuCategory";
 
+import db from "../db.json";
+
 export default function Menu() {
-  const [products, setProducts] = useState([]);
-
-  const fetchProducts = async () => {
-    const response = await axios.get("http://localhost:3001/products");
-
-    setProducts(response.data);
-  };
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
+  const [products, setProducts] = useState(db.products);
 
   return (
-    <div className="menu">
+    <div className="menu" id="menu">
       <Container>
         <h2 className="title">
           MENU <hr />

@@ -1,13 +1,8 @@
-/*
-font-family: 'Lato', sans-serif;
-font-family: 'Nova Round', cursive;
-font-family: 'Zilla Slab', serif;
-*/
-
 :root {
   --primary: #61a375;
   --primary-dark: #0c3117;
   --black: #1b1916;
+  --white: #ecf8e8;
 }
 
 * {
@@ -19,8 +14,6 @@ font-family: 'Zilla Slab', serif;
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-image: url("./assets/concrete-wall-2.png");
   background-color: var(--primary);
   color: var(--dark);
@@ -41,14 +34,12 @@ img {
 /*
 PRINCIPAL LAYOUT
 */
-
 .principal {
   position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 .carrousel {
   flex: 1;
   background-position: center;
@@ -56,7 +47,6 @@ PRINCIPAL LAYOUT
   background-size: cover;
   filter: brightness(0.55);
 }
-
 .header {
   max-width: 300px;
   margin: 20px auto;
@@ -73,7 +63,6 @@ PRINCIPAL LAYOUT
 .header .logo-subtitle {
   text-align: end;
 }
-
 .styled-button {
   background-color: var(--primary);
   font-family: "Nova Round", cursive;
@@ -86,6 +75,11 @@ PRINCIPAL LAYOUT
   left: 20px;
   bottom: 20px;
 }
+@media screen and (min-width: 600px) {
+  .styled-button {
+    left: 20%;
+  }
+}
 .styled-button:hover {
   filter: brightness(0.65);
 }
@@ -96,13 +90,12 @@ PRINCIPAL LAYOUT
   bottom: 5px;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
+  border: 1px solid var(--white);
 }
 
 /*
 MENU LAYOUT
 */
-
 .menu {
   min-height: 100vh;
 }
@@ -120,8 +113,9 @@ MENU LAYOUT
 }
 .menu .category {
   position: relative;
-  padding: 15px 45px;
-  margin-top: 50px;
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--white);
 }
 .category-title {
   font-family: "Zilla Slab", serif;
@@ -132,24 +126,6 @@ MENU LAYOUT
   line-height: 1;
   margin-top: -5px;
   margin-bottom: 5px;
-}
-.menu .category::after {
-  content: "";
-  position: absolute;
-  border: 1px solid red;
-  width: 85%;
-  height: 100%;
-  top: 10px;
-  left: 20px;
-}
-.menu .category::before {
-  content: "";
-  position: absolute;
-  border: 1px solid red;
-  width: 85%;
-  height: 100%;
-  top: 0px;
-  left: 30px;
 }
 
 .section-title {
