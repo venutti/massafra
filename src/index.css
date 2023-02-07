@@ -26,7 +26,6 @@ img {
 
 .container {
   position: relative;
-  width: 100%;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -38,7 +37,7 @@ PRINCIPAL LAYOUT
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: calc(100 * var(--vh)); /* 100vh */
 }
 .carrousel {
   flex: 1;
@@ -59,6 +58,9 @@ PRINCIPAL LAYOUT
   font-size: 50px;
   letter-spacing: -5px;
   margin-bottom: -15px;
+}
+.header .logo-title img {
+  max-width: 35px;
 }
 .header .logo-subtitle {
   text-align: end;
